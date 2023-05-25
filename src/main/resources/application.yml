@@ -1,5 +1,16 @@
 management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: prometheus
+
+logging:
+  level:
+    com:
+      meraj:
+        MonitoringDemo: debug

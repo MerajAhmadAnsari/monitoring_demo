@@ -13,7 +13,6 @@ public class PingController {
 
     @GetMapping()
     public ResponseEntity<String> ping(){
-        log.warn("dummywarning");
         return ResponseEntity.ok("pong");
     }
 }
